@@ -18,6 +18,7 @@ sleep 5
 
 # restart on crash
 while true; do
-    com.android.systemui
+    com.android.systemui &
+    kill -INT "${!}"; wait
     sleep 1
 done

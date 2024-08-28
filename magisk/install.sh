@@ -121,6 +121,7 @@ REPLACE="
 
 # Set what you want to display when installing your module
 
+[ "${MODPATH#/data/adb}" != "${MODPATH}" ] || MODPATH="/data/adb${MODPATH}"
 _TARGETDIR="${MODPATH}/system/bin"
 print_modname() {
   ui_print " "
