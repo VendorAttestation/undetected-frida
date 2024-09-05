@@ -1,4 +1,4 @@
-name: undetected-frida
+name: undetected-frida-stable
 
 on:
   schedule:
@@ -12,7 +12,7 @@ jobs:
     - name: Check for existing release
       id: check
       run: |
-        frida_version="16.4.0"  # Set Frida version here
+        frida_version="16.4.3"  # Set Frida version here
         echo "FRIDA_VERSION=${frida_version}" >> "${GITHUB_OUTPUT}"  # gh env?
 
         release_exists=0
